@@ -18,14 +18,19 @@ Chrome插件开发实战
 * [Typescript 语言入门](https://wangdoc.com/typescript/intro)
 * [JavaScript教程](https://wangdoc.com/javascript/)
 
-
 3. chrome 开发参考资料
 
 * [chrome develop reference](https://developer.chrome.com/docs/extensions/mv3/intro/)
-* [Extensions 101](https://developer.chrome.com/docs/extensions/mv3/getstarted/extensions-101/)
+* [Extensions 101](https://developer.chrome.com/docs/extensions/mv3/g
+etstarted/extensions-101/)
+
+* [前端组件库](https://element-plus.org/zh-CN/)
 
 
-
-4. AI的应用参考
+4. AI的应用示例
 
 * [heyGen](https://www.heygen.com/)
+
+5. AI应用推荐
+
+[TTS 文本转语音](https://www.text-to-speech.cn/)
