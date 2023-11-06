@@ -1,8 +1,8 @@
 # crx-in-action
-Chrome插件开发实战
+《Chrome浏览器插件开发实战》
 
 
--《Chrome浏览器插件开发实战》
+
 
 1. 参考开源书籍
 
@@ -33,4 +33,4 @@ etstarted/extensions-101/)
 
 5. AI应用推荐
 
-[TTS 文本转语音](https://www.text-to-speech.cn/)
+* [TTS 文本转语音](https://www.text-to-speech.cn/)
