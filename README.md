@@ -1,9 +1,6 @@
 # crx-in-action
 《Chrome浏览器插件开发实战》
 
-
-
-
 1. 参考开源书籍
 
 * [数据科学与工程导论](https://github.com/will-ww/IntroDaSE/tree/master)
@@ -28,7 +25,8 @@ etstarted/extensions-101/)
 
 
 4. AI的应用示例
-
+* [readtome](https://read2me.online/developers/widget/)
+* [audioread](https://audioread.com/?via=ttsreader)
 * [heyGen](https://www.heygen.com/)
 
 5. AI应用推荐
