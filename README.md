@@ -38,3 +38,5 @@ etstarted/extensions-101/)
 [网景公司的历史](https://zh.wikipedia.org/zh-hans/%E7%B6%B2%E6%99%AF)
 [mozilla 浏览器扩展](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)
 [浏览器市场份额](https://gs.statcounter.com/)
+
+[chrome插件统计](https://blog.csdn.net/weixin_50701203/article/details/133975603)
