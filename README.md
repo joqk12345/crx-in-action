@@ -32,3 +32,9 @@ etstarted/extensions-101/)
 5. AI应用推荐
 
 * [TTS 文本转语音](https://www.text-to-speech.cn/)
+
+6. 其他参考
+
+[网景公司的历史](https://zh.wikipedia.org/zh-hans/%E7%B6%B2%E6%99%AF)
+[mozilla 浏览器扩展](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)
+[浏览器市场份额](https://gs.statcounter.com/)
