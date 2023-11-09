@@ -48,6 +48,5 @@ etstarted/extensions-101/)
 *  [shulex 选品推荐](https://www.zhihu.com/people/shulex-voc)
 * [evernote-web-clipper](https://addons.mozilla.org/en-US/firefox/addon/evernote-web-clipper/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [Shulex](https://chrome.google.com/webstore/detail/shulex-copilotchatgpt-e-c/imbdabdbipefiieekabpncjcambojjdg)
-[hypertrons](https://github.com/hypertrons/hypertrons-crx)
-
-[shoppify](https://www.getmesa.com/apps/shopify/integrate/openai)  由于马斯克推荐，但是没有放到操作资料里
+* [hypertrons](https://github.com/hypertrons/hypertrons-crx)
+* [shoppify](https://www.getmesa.com/apps/shopify/integrate/openai)  由于马斯克推荐，但是没有放到操作资料里
