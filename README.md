@@ -49,4 +49,4 @@ etstarted/extensions-101/)
 * [evernote-web-clipper](https://addons.mozilla.org/en-US/firefox/addon/evernote-web-clipper/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [Shulex](https://chrome.google.com/webstore/detail/shulex-copilotchatgpt-e-c/imbdabdbipefiieekabpncjcambojjdg)
 * [hypertrons](https://github.com/hypertrons/hypertrons-crx)
-* [shoppify](https://www.getmesa.com/apps/shopify/integrate/openai)  由于马斯克推荐，但是没有放到操作资料里
+* [shoppify](https://www.getmesa.com/apps/shopify/integrate/openai)  由于sam altom在openai 的dev day 上作为例子推荐，但是没有放到实际资料里，后面需要在研究一下
