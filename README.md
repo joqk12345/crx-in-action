@@ -49,4 +49,17 @@ etstarted/extensions-101/)
 * [evernote-web-clipper](https://addons.mozilla.org/en-US/firefox/addon/evernote-web-clipper/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
 * [Shulex](https://chrome.google.com/webstore/detail/shulex-copilotchatgpt-e-c/imbdabdbipefiieekabpncjcambojjdg)
 * [hypertrons](https://github.com/hypertrons/hypertrons-crx)
-* [shopfiy的 copliot  sidebar](https://www.getmesa.com/apps/shopify/integrate/openai)  由于sam altom在openai 的dev day 上作为例子推荐，但是没有放到实际资料里，后面需要在研究一下
+* [shopfiy的 copliot  sidebar](https://www.getmesa.com/apps/shopify/integrate/openai)  由于sam altman在openai 的dev day 上作为例子推荐，但是没有放到实际资料里，后面需要在研究一下
+
+2. 第二节
+
+* [V8 Parse模块 ](https://v8.dev/blog/scanner)
+* [V8 Interpreter](https://v8.dev/blog/ignition-interpreter)
+* [V8 TurboFan ](https://v8.dev/blog/turbofan-jit)
+* [V8 团队blog](https://v8.dev/blog)
+
+* [spidermonkey](https://spidermonkey.dev/)
+* [WebKit](https://en.wikipedia.org/wiki/WebKit)
+
+3. 第三节
+
