@@ -63,4 +63,14 @@ etstarted/extensions-101/)
 
 3. 第三节
 
-[Chrome Extension with React + CRXJS + Vite + Docker ](https://mk668a.com/en/blog/Chrome%20Extension%20with%20React%20+%20CRXJS%20+%20Vite%20+%20Docker/)
+* [Chrome Extension with React + CRXJS + Vite + Docker ](https://mk668a.com/en/blog/Chrome%20Extension%20with%20React%20+%20CRXJS%20+%20Vite%20+%20Docker/)
+
+* [Chrome extensions document](https://developer.chrome.com/docs/extensions/)
+* [Chrome plugin script](https://developer.chrome.com/docs/extensions/mv3/getstarted/tut-reading-time/)
+
+* [chrome-extension-tools](https://github.com/crxjs/chrome-extension-tools)
+* [Chrome 浏览器开发指南](https://segmentfault.com/a/1190000042851130)
+
+* [开源浏览器插件](https://github.com/search?q=chrome+ext&type=repositories&s=stars&o=desc)
+
+[extension-v3](https://github.com/mubaidr/vite-vue3-chrome-extension-v3)
