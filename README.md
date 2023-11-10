@@ -63,3 +63,4 @@ etstarted/extensions-101/)
 
 3. 第三节
 
+[Chrome Extension with React + CRXJS + Vite + Docker ](https://mk668a.com/en/blog/Chrome%20Extension%20with%20React%20+%20CRXJS%20+%20Vite%20+%20Docker/)
