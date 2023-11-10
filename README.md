@@ -73,4 +73,4 @@ etstarted/extensions-101/)
 
 * [开源浏览器插件](https://github.com/search?q=chrome+ext&type=repositories&s=stars&o=desc)
 
-[extension-v3](https://github.com/mubaidr/vite-vue3-chrome-extension-v3)
+* [extension-v3](https://github.com/mubaidr/vite-vue3-chrome-extension-v3)
