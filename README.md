@@ -74,3 +74,14 @@ etstarted/extensions-101/)
 * [开源浏览器插件](https://github.com/search?q=chrome+ext&type=repositories&s=stars&o=desc)
 
 * [extension-v3](https://github.com/mubaidr/vite-vue3-chrome-extension-v3)
+
+## 第二章 参考资料
+
+1. 第一节
+
+* [浏览器扩展愿景](https://developer.chrome.com/docs/extensions/mv3/intro/platform-vision/)
+* [Manifest file format](https://developer.chrome.com/docs/extensions/mv3/manifest/)
+* [Declare permissions](https://developer.chrome.com/docs/extensions/mv3/declare_permissions/)
+* [service_workers](https://developer.chrome.com/docs/extensions/mv3/service_workers/)
+* [service-worker-lifecycle](https://developer.chrome.com/docs/extensions/mv3/service_workers/service-worker-lifecycle/)
+* [mv3新特性](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
