@@ -85,3 +85,8 @@ etstarted/extensions-101/)
 * [service_workers](https://developer.chrome.com/docs/extensions/mv3/service_workers/)
 * [service-worker-lifecycle](https://developer.chrome.com/docs/extensions/mv3/service_workers/service-worker-lifecycle/)
 * [mv3新特性](https://developer.chrome.com/docs/extensions/mv3/intro/mv3-overview/)
+
+2. 第二节
+
+* [消息通信](https://developer.chrome.com/docs/extensions/mv3/messaging/#native-messaging)
+* [storage API](https://developer.chrome.com/docs/extensions/reference/storage/)
