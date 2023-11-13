@@ -90,3 +90,11 @@ etstarted/extensions-101/)
 
 * [消息通信](https://developer.chrome.com/docs/extensions/mv3/messaging/#native-messaging)
 * [storage API](https://developer.chrome.com/docs/extensions/reference/storage/)
+
+3. 第三节
+* [Node.js 运行时architecture](https://litslink.com/blog/node-js-architecture-from-a-to-z)
+* [Node.js的模块系统](https://www.nodeapp.cn/modules.html)
+* [2023年Stack Overflow 热门技术排行榜](https://survey.stackoverflow.co/2023/#most-popular-technologies-language)
+* [Node.js Getting Started](https://nodejs.org/en/learn)
+* [GitHub 开源社区语言流行度](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/)
+* [stylus 开发手册](https://stylus-lang.com/docs/)
