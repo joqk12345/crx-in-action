@@ -98,3 +98,9 @@ etstarted/extensions-101/)
 * [Node.js Getting Started](https://nodejs.org/en/learn)
 * [GitHub 开源社区语言流行度](https://github.blog/2023-11-08-the-state-of-open-source-and-ai/)
 * [stylus 开发手册](https://stylus-lang.com/docs/)
+
+4. 第四节
+
+* [前端构建工具简史](https://juejin.cn/post/7085613927249215525#heading-15)
+* [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
+* [Why Vite](https://vitejs.dev/guide/why.html)
