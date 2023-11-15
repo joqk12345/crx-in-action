@@ -52,14 +52,14 @@ etstarted/extensions-101/)
 * [shopfiy的 copliot  sidebar](https://www.getmesa.com/apps/shopify/integrate/openai)  由于sam altman在openai 的dev day 上作为例子推荐，但是没有放到实际资料里，后面需要在研究一下
 
 2. 第二节
-
+* [深入理解现代浏览器](https://mp.weixin.qq.com/s?__biz=Mzg5NDEyMzA2NQ==&mid=2247484400&idx=1&sn=9c7d4b7f346034fd06e2a587cb9c58cf&chksm=c0252ea6f752a7b06e0e6ba4346581fbe864ec769963ffa6cf4b0c7204f4afb0ddb44a76e6cd&mpshare=1&scene=1&srcid=1008vvgoRuGQgyy1MwuzlS8T&sharer_sharetime=1570506760100&sharer_shareid=778ad5bf3b27e0078eb105d7277263f6#rd)
 * [V8 Parse模块 ](https://v8.dev/blog/scanner)
 * [V8 Interpreter](https://v8.dev/blog/ignition-interpreter)
 * [V8 TurboFan ](https://v8.dev/blog/turbofan-jit)
 * [V8 团队blog](https://v8.dev/blog)
-
 * [spidermonkey](https://spidermonkey.dev/)
 * [WebKit](https://en.wikipedia.org/wiki/WebKit)
+* [浏览器架构漫谈](https://github.com/LuckyWinty/blog/blob/master/markdown/Q%26A/%E7%8E%B0%E4%BB%A3%E6%B5%8F%E8%A7%88%E5%99%A8%E6%9E%B6%E6%9E%84%E6%BC%AB%E8%B0%88.md)
 
 3. 第三节
 
