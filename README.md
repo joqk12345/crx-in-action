@@ -42,7 +42,9 @@ etstarted/extensions-101/)
 * [mozilla 浏览器扩展](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/What_are_WebExtensions)
 * [浏览器市场份额](https://gs.statcounter.com/)
 * [chrome插件统计](https://blog.csdn.net/weixin_50701203/article/details/133975603)
-
+* [浏览器战争](https://36kr.com/p/2380920284457989)
+* [WorldWideWeb](https://en.wikipedia.org/wiki/WorldWideWeb)
+* [Microsoft Internet Explorer](https://zh.wikipedia.org/wiki/Internet_Explorer%E6%AD%B7%E5%8F%B2)
 1. 第一节
 
 *  [shulex 选品推荐](https://www.zhihu.com/people/shulex-voc)
