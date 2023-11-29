@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "我的插件",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://*.example.com/*"],
+      "css": ["my-styles.css"],
+      "js": ["content-script.js"],
+      "exclude_matches": ["*://*/*foo*"],
+      "include_globs": ["*example.com/???s/*"],
+      "exclude_globs": ["*bar*"],
+      "all_frames": false,
+      "match_origin_as_fallback": false,
+      "match_about_blank": false,
+      "run_at": "document_idle",
+      "world": "ISOLATED"
+    }
+  ]
+}

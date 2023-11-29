@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "我的插件",
+  "version": "1.0",
+  "chrome_url_overrides": {
+    "newtab": "my-new-tab.html",
+    "bookmarks": "my-bookmarks.html",
+    "history": "my-history.html"
+  }
+}

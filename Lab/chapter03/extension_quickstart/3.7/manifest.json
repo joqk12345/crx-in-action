@@ -1,0 +1,14 @@
+{
+  "name": "Quickstart Extension for Chrome",
+  "description": "A simple browser extension qucikstart",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+  {
+    "js": ["content.js"],
+    "matches": ["https://*.content3ai.com/*"],
+    "run_at": "document_end"
+  }
+]
+
+}

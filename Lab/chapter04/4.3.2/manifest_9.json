@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "我的插件",
+  "version": "1.0",
+  "commands": {
+    "toggle-feature": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y",
+        "mac": "Command+Shift+Y"
+      },
+      "description": "切换功能"
+    }
+  }
+}

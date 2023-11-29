@@ -1,0 +1,8 @@
+{
+  "manifest_version": 3,
+  "name": "我的插件",
+  "version": "1.0",
+  "author": {
+    "email": "user@example.com"
+  }
+}

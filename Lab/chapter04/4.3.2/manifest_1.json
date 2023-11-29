@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "我的插件",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "24": "images/icon24.png",
+      "32": "images/icon32.png"
+    },
+    "default_title": "点击我",
+    "default_popup": "popup.html"
+  }
+}

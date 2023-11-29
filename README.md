@@ -45,6 +45,7 @@ etstarted/extensions-101/)
 * [浏览器战争](https://36kr.com/p/2380920284457989)
 * [WorldWideWeb](https://en.wikipedia.org/wiki/WorldWideWeb)
 * [Microsoft Internet Explorer](https://zh.wikipedia.org/wiki/Internet_Explorer%E6%AD%B7%E5%8F%B2)
+* [W3C](https://www.w3.org/)
 1. 第一节
 
 *  [shulex 选品推荐](https://www.zhihu.com/people/shulex-voc)
@@ -52,6 +53,7 @@ etstarted/extensions-101/)
 * [Shulex](https://chrome.google.com/webstore/detail/shulex-copilotchatgpt-e-c/imbdabdbipefiieekabpncjcambojjdg)
 * [hypertrons](https://github.com/hypertrons/hypertrons-crx)
 * [shopfiy的 copliot  sidebar](https://www.getmesa.com/apps/shopify/integrate/openai)  由于sam altman在openai 的dev day 上作为例子推荐，但是没有放到实际资料里，后面需要在研究一下
+* [优秀的AI插件](https://waytoagi.feishu.cn/wiki/C5rJwXCeIiOV7TkuPEqcZTDjnZe?table=tblwvk1NdyQI8HNI&view=vewCzwGlYF)
 
 2. 第二节
 * [深入理解现代浏览器](https://mp.weixin.qq.com/s?__biz=Mzg5NDEyMzA2NQ==&mid=2247484400&idx=1&sn=9c7d4b7f346034fd06e2a587cb9c58cf&chksm=c0252ea6f752a7b06e0e6ba4346581fbe864ec769963ffa6cf4b0c7204f4afb0ddb44a76e6cd&mpshare=1&scene=1&srcid=1008vvgoRuGQgyy1MwuzlS8T&sharer_sharetime=1570506760100&sharer_shareid=778ad5bf3b27e0078eb105d7277263f6#rd)
@@ -106,3 +108,10 @@ etstarted/extensions-101/)
 * [前端构建工具简史](https://juejin.cn/post/7085613927249215525#heading-15)
 * [ES modules: A cartoon deep-dive](https://hacks.mozilla.org/2018/03/es-modules-a-cartoon-deep-dive/)
 * [Why Vite](https://vitejs.dev/guide/why.html)
+
+
+
+## 第四章
+
+* [Service-Worker 页面](chrome://serviceworker-internals/?devtools)
+

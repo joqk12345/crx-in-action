@@ -1,0 +1,7 @@
+{
+  "name": "Quickstart Extension for Chrome",
+  "description": "A simple browser extension qucikstart",
+  "version": "1.0",
+  "manifest_version": 3,
+  "devtools_page": "devtools.html"
+}
