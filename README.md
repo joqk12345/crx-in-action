@@ -115,3 +115,7 @@ etstarted/extensions-101/)
 
 * [Service-Worker 页面](chrome://serviceworker-internals/?devtools)
 
+## 第九章
+
+* [W3C Service Workers](https://www.w3.org/TR/service-workers/#model)
+* [Service Worker API](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API#service_worker_concepts_and_usage)
