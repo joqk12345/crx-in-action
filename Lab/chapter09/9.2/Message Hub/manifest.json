@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Message Hub Extension",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "storage"
+  ]
+}

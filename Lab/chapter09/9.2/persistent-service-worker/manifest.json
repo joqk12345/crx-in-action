@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Connectable Tab Demo",
+  "version": "1.0",
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+  "permissions": [
+    "activeTab",
+    "scripting"
+  ],
+  "host_permissions": ["<all_urls>"]
+}
