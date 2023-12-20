@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Network Sniffer Extension",
+  "version": "1.0",
+  "permissions": [
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"// 用于收集规则效果的权限
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
