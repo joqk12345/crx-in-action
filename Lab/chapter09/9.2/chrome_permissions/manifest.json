@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "PermissionsDemo",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "optional_permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+  },
+  "host_permissions": [
+    "<all_urls>"
+  ]
+}

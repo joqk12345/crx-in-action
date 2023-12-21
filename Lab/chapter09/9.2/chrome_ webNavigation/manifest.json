@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "WebNavigationDemo",
+  "version": "1.0",
+  "permissions": [
+    "webNavigation"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
