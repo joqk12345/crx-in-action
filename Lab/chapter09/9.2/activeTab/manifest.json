@@ -1,0 +1,11 @@
+{
+  "name": "3",
+  "version": "0.0.1",
+  "description": "MV3",
+  "manifest_version": 3,
+  "action": {}, 
+  "permissions": [],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

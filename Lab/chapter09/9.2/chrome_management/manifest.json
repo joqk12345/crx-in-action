@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "ManagementDemo",
+  "version": "1.0",
+  "permissions": [
+    "management"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
