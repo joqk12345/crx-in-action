@@ -115,7 +115,7 @@ etstarted/extensions-101/)
 
 * [Service-Worker 页面](chrome://serviceworker-internals/?devtools)
 
-## 第九章
+## 第八章
 
 * [内容脚本](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
 
