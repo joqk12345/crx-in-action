@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "Dynamic Content Script Demo",
+  "version": "1.0",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html" // 弹出窗口页面
+  }
+}

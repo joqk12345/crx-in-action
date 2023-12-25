@@ -1,0 +1,10 @@
+{
+  "name": "My extension",
+  "content_scripts": [
+    {
+      "matches": ["https://*.nytimes.com/*"],
+      "exclude_matches": ["*://*/*business*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
