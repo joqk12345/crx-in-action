@@ -118,7 +118,7 @@ etstarted/extensions-101/)
 ## 第八章
 
 * [内容脚本](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
-
+* [sample](https://github.com/GoogleChrome/chrome-extensions-samples/tree/main/functional-samples/tutorial.reading-time)
 
 ## 第九章
 

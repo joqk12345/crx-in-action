@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "对话助手",
+  "version": "1.0",
+  "description": "在右下角生成对话小人，点击弹出对话内容",
+  "permissions": ["activeTab"],
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["dialog.png"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
