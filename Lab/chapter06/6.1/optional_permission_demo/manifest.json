@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Optional Permissions Demo",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "optional_permissions": ["tabs", "storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
