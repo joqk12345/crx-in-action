@@ -115,6 +115,9 @@ etstarted/extensions-101/)
 
 * [Service-Worker 页面](chrome://serviceworker-internals/?devtools)
 
+## 第六章
+* [Permissions List](https://support.google.com/chrome/a/answer/7515036?hl=zh-Hans)
+
 ## 第八章
 
 * [内容脚本](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
