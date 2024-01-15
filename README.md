@@ -117,7 +117,11 @@ etstarted/extensions-101/)
 
 ## 第六章
 * [Permissions List](https://support.google.com/chrome/a/answer/7515036?hl=zh-Hans)
+* [permission list](https://developer.chrome.com/docs/extensions/develop/concepts/declare-permissions#permissions)
 
+## 第七章
+
+* [交互的UI组件](https://developer.chrome.com/docs/extensions/develop/ui)
 ## 第八章
 
 * [内容脚本](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)

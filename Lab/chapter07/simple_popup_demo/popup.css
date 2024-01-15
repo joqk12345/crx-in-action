@@ -1,0 +1,9 @@
+body {
+  min-width: 40rem;
+  padding: 6rem;
+  text-align: center;
+}
+
+#url, #xid {
+  margin-top: 1rem;
+}

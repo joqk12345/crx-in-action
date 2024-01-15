@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Your Extension Name",
+  "version": "1.0",
+
+  "permissions": ["downloads"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "host_permissions": [
+    "https://twitter.com/*",
+    "http://localhost/*",
+    "https://content3ai.com/*"
+  ]
+}
