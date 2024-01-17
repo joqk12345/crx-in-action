@@ -122,6 +122,7 @@ etstarted/extensions-101/)
 ## 第七章
 
 * [交互的UI组件](https://developer.chrome.com/docs/extensions/develop/ui)
+* [option-page](https://developer.chrome.com/docs/extensions/develop/ui/options-page)
 ## 第八章
 
 * [内容脚本](https://developer.chrome.com/docs/extensions/develop/concepts/content-scripts)
