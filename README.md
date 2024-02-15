@@ -135,3 +135,7 @@ etstarted/extensions-101/)
 * [Persistent Service Worker in Chrome Extension](https://stackoverflow.com/questions/66618136/persistent-service-worker-in-chrome-extension#answer-66618269)
 * [Service Worker LifeCycle](https://medium.com/whatfix-techblog/service-worker-in-browser-extensions-a3727cd9117a)
 * [notifications config](https://juejin.cn/post/6992889349213782030)
+
+## 第十二章
+
+* (Vite5](https://vitejs.dev/blog/announcing-vite5))
