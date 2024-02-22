@@ -140,7 +140,7 @@ etstarted/extensions-101/)
 
 * [webNavigation](https://developer.chrome.com/docs/extensions/reference/api/webNavigation)
 * [webNavigation event](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation)
-
+* [web-request-and-declarative-net-request.html](https://blog.chromium.org/2019/06/web-request-and-declarative-net-request.html)
 ## 第十二章
 
 * (Vite5](https://vitejs.dev/blog/announcing-vite5))
