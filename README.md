@@ -136,6 +136,11 @@ etstarted/extensions-101/)
 * [Service Worker LifeCycle](https://medium.com/whatfix-techblog/service-worker-in-browser-extensions-a3727cd9117a)
 * [notifications config](https://juejin.cn/post/6992889349213782030)
 
+## 第十一章
+
+* [webNavigation](https://developer.chrome.com/docs/extensions/reference/api/webNavigation)
+* [webNavigation event](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/API/webNavigation)
+
 ## 第十二章
 
 * (Vite5](https://vitejs.dev/blog/announcing-vite5))
