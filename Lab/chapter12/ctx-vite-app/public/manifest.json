@@ -1,0 +1,38 @@
+{
+    "name":"ctx-vue-app",
+    "version":"1.0",
+    "description":"build chrome extention base vue & vite5 demo",
+    "manifest_version":3,
+    "background":{
+        "service_worker":"background.js"
+    },
+    "content_script":[
+        {
+            "matches":["<all_urls"],
+            "css":["content.css"],
+            "js":["content.js"],
+            "run_at":"document_end:"
+        }
+    ],
+    "permission":["storage","declarativeContent"],
+    "host_permission":[],
+    "web_accessible_resources":[
+        {
+            "resources":["images/app.png"],
+            "matches":["<all_urls"]
+        },
+        {
+            "resources":["insert.js"],
+            "matches":["<all_urls"]
+        }
+    ],
+    "action":{
+        "default_popup":"index.html",
+        "default_icon":{
+            "16":"images/app.png",
+            "32":"images/app.png",
+            "48":"images/app.png",
+            "128":"images/app.png"
+        }
+    }
+}
