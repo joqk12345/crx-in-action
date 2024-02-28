@@ -143,7 +143,7 @@ etstarted/extensions-101/)
 * [web-request-and-declarative-net-request.html](https://blog.chromium.org/2019/06/web-request-and-declarative-net-request.html)
 ## 第十二章
 
-* [Vite5](https://vitejs.dev/blog/announcing-vite5))
+* [Vite5](https://vitejs.dev/blog/announcing-vite5)
 * [Build JavaScript applications using Typescript](https://learn.microsoft.com/en-us/training/paths/build-javascript-applications-typescript/)
 * [typescript-official-document](https://www.typescriptlang.org/)
 * [vite-server-options](https://vitejs.dev/config/server-options.html#server-open)
