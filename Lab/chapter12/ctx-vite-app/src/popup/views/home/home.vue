@@ -74,23 +74,27 @@
       <el-text
         class="mx-1"
         type="info"
-      >AnythingtoContent</el-text>
+      >内容转音频</el-text>
     </div>
   </div>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 import { reactive } from 'vue'
 const form = reactive({
   wordcount: '',
   detected_language: '',
   target_language: '',
 })
+const onSubmit = () => {
+  console.log('submit!', form)
+}
 /*
 const onSubmit = async () => {
   console.log('submit!', form)
-
-
   //获取当前激活tab页的信息
   let queeryOptions = {
     active: true,
@@ -118,15 +122,18 @@ const onSubmit = async () => {
   })
 }
 
-
+*/
 const gotoSettings = () => {
   console.log('gotoSettings')
   window.open('options/index.html')
 }
-*/
+
 </script>
 
-<style scoped lang="stylus">
+<style
+  scoped
+  lang="stylus"
+>
 .P-home
     position relative
     width: 350px

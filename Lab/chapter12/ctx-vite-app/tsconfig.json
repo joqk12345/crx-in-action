@@ -25,7 +25,8 @@
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,
-    "noUnusedParameters": true,
+    //禁用未使用参数的检查。
+    "noUnusedParameters": false,
     "noFallthroughCasesInSwitch": true
   },
   "include": [

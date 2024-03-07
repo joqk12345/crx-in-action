@@ -44,7 +44,10 @@
   </el-form>
 </template>
 
-<script lang="ts" setup>
+<script
+  lang="ts"
+  setup
+>
 import { reactive, ref } from 'vue'
 import type { FormInstance, FormRules } from 'element-plus'
 
@@ -66,10 +69,16 @@ const rules = reactive<FormRules<RuleForm>>({
     { min: 3, max: 10, message: '长度应该在3-10个字符之间', trigger: 'blur' },
   ],
   password: [
-    { required: true, message: '请输入密码',trigger: 'blur' },
+    { required: true, message: '请输入密码', trigger: 'blur' },
     { min: 3, max: 10, message: '长度应该在3-10个字符之间', trigger: 'blur' },
   ],
 })
+const submitForm = async (formEl: FormInstance | undefined) => {
+  console.log("occupation");
+}
+const registerForm = async () => {
+  console.log("register");
+}
 /*
 const submitForm = async (formEl: FormInstance | undefined) => {
   if (!formEl) return
@@ -117,7 +126,10 @@ const registerForm = async () => {
 </script>
 
 
-<style scoped lang="stylus">
+<style
+  scoped
+  lang="stylus"
+>
 .P-login
     position: absolute
     width: 350px

@@ -8,7 +8,7 @@ const router = createRouter({
 })
 
 // 路由守卫
-/*
+//@ts-ignore
 router.beforeEach((to, from, next) => {
   // 判断用户是否登录
   const userInfo = localStorage.getItem(sessionKey)
@@ -23,5 +23,5 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
-*/
+
 export default router
