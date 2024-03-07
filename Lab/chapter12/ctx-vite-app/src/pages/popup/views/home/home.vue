@@ -125,7 +125,7 @@ const onSubmit = async () => {
 */
 const gotoSettings = () => {
   console.log('gotoSettings')
-  window.open('options/index.html')
+  window.open('/options.html')
 }
 
 </script>
