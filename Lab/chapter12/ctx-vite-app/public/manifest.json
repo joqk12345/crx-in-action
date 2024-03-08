@@ -6,15 +6,15 @@
   //   "background": {
   //     "service_worker": "background.js"
   //   },
-  //   "content_script": [
-  //     {
-  //       "matches": ["<all_urls"],
-  //       "css": ["content.css"],
-  //       "js": ["content.js"],
-  //       "run_at": "document_end:"
-  //     }
-  //   ],
-  //   "host_permission": [],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*"],
+      "css": ["content.css"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "host_permissions": ["https://*/*"],
   "action": {
     "default_popup": "index.html",
     "default_icon": {

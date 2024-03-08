@@ -1,26 +1,31 @@
 {
-    "name": "ctx-vite-app",
-    "private": true,
-    "version": "0.0.0",
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vue-tsc && vite build",
-        "preview": "vite preview --port 8080"
-    },
-    "dependencies": {
-        "element-plus": "^2.5.6",
-        "js-cookie": "^3.0.5",
-        "vue": "^3.4.19",
-        "vue-router": "4"
-    },
-    "devDependencies": {
-        "@types/js-cookie": "^3.0.6",
-        "@types/node": "^20.11.24",
-        "@vitejs/plugin-vue": "^5.0.4",
-        "stylus": "^0.62.0",
-        "typescript": "^5.2.2",
-        "vite": "^5.1.4",
-        "vue-tsc": "^1.8.27"
-    }
+  "name": "ctx-vite-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "build:all": "vue-tsc && vite build -c vite.config.ts && vite build -c vite.content.config.ts && sudo node build.js",
+    "build:content": "vite build -c vite.content.config.ts",
+    "preview": "vite preview --port 8080"
+  },
+  "dependencies": {
+    "element-plus": "^2.5.6",
+    "js-cookie": "^3.0.5",
+    "vue": "^3.4.19",
+    "vue-router": "4"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.0.262",
+    "@types/js-cookie": "^3.0.6",
+    "@types/node": "^20.11.24",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "dexie": "^3.2.6",
+    "sass": "^1.71.1",
+    "stylus": "^0.62.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4",
+    "vue-tsc": "^1.8.27"
+  }
 }

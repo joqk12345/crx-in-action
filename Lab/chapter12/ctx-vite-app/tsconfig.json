@@ -27,7 +27,9 @@
     "noUnusedLocals": true,
     //禁用未使用参数的检查。
     "noUnusedParameters": false,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    //
+    "esModuleInterop": true
   },
   "include": [
     "src/**/*.ts",
