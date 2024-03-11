@@ -6,8 +6,9 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
-    "build:all": "vue-tsc && vite build -c vite.config.ts && vite build -c vite.content.config.ts && sudo node build.js",
+    "build:all": "vue-tsc && vite build -c vite.config.ts && vite build -c vite.content.config.ts && vite build -c vite.background.config.ts && sudo node build.js",
     "build:content": "vite build -c vite.content.config.ts",
+    "build:background": " vite build -c vite.background.config.ts",
     "preview": "vite preview --port 8080"
   },
   "dependencies": {

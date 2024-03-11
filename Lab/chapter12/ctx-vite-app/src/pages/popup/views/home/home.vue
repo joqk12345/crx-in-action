@@ -89,10 +89,10 @@ const form = reactive({
   detected_language: '',
   target_language: '',
 })
-const onSubmit = () => {
-  console.log('submit!', form)
-}
-/*
+// const onSubmit = () => {
+//   console.log('submit!', form)
+// }
+
 const onSubmit = async () => {
   console.log('submit!', form)
   //获取当前激活tab页的信息
@@ -122,7 +122,7 @@ const onSubmit = async () => {
   })
 }
 
-*/
+
 const gotoSettings = () => {
   console.log('gotoSettings')
   window.open('/options.html')
