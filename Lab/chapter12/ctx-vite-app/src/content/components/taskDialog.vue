@@ -69,7 +69,28 @@ interface Props {
   wordCount: number;
   webtext: string;
 }
-// let tableData: Task[] = reactive([]);
+
+// const mockTasks: Task[] = [
+//   {
+//     id: 1,
+//     title: '任务1',
+//     url: 'https://example.com/task1',
+//     status: '进行中',
+//     download_link: 'https://example.com/download/task1',
+//     date: '2024-03-12'
+//   },
+//   {
+//     id: 2,
+//     title: '任务2',
+//     url: 'https://example.com/task2',
+//     status: '已完成',
+//     download_link: 'https://example.com/download/task2',
+//     date: '2024-03-11'
+//   },
+//   // 添加更多的模拟数据...
+// ];
+
+//const tableData = ref<Task[]>(mockTasks);
 const tableData = ref<Task[]>([]);
 const emit = defineEmits(['onClose'])
 const props = defineProps<Props>();
@@ -77,43 +98,18 @@ const isVisible = ref(props.visible);
 watchEffect(() => {
   isVisible.value = props.visible;
   //get data
-  chrome.runtime.sendMessage(
-    {
-      action: 'getTasks',
-    },
-    (response) => {
-      console.log("get response result")
-      console.log(response.data);
-      tableData.value = response.data;
-      total.value = response.data.length
-    }
-  )
+  // chrome.runtime.sendMessage(
+  //   {
+  //     action: 'getTasks',
+  //   },
+  //   (response) => {
+  //     console.log("get response result")
+  //     console.log(response.data);
+  //     tableData.value = response.data;
+  //     total.value = response.data.length
+  //   }
+  // )
 });
-
-watch(isVisible, (newVal) => {
-  if (!newVal) {
-    emit('onClose')
-  }
-});
-
-function sortData(data: Task[]): Task[] {
-  return data.sort((a: Task, b: Task) => {
-    const dateA = new Date(a.date!);
-    const dateB = new Date(b.date!);
-    return dateB.getTime() - dateA.getTime();
-  });
-}
-
-//页码
-const pagesize = ref(5)
-const total = ref(0)
-const current_page = ref(1)
-
-const paginatedData = computed(() => {
-  const startIndex = (current_page.value - 1) * pagesize.value
-  const endIndex = startIndex + pagesize.value
-  return sortData(tableData.value).slice(startIndex, endIndex)
-})
 
 
 // tableData = [
@@ -159,6 +155,33 @@ const paginatedData = computed(() => {
 //     status: 'pending'
 //   },
 // ]
+
+watch(isVisible, (newVal) => {
+  if (!newVal) {
+    emit('onClose')
+  }
+});
+
+function sortData(data: Task[]): Task[] {
+  return data.sort((a: Task, b: Task) => {
+    const dateA = new Date(a.date!);
+    const dateB = new Date(b.date!);
+    return dateB.getTime() - dateA.getTime();
+  });
+}
+
+//页码
+const pagesize = ref(5)
+const total = ref(0)
+const current_page = ref(1)
+
+const paginatedData = computed(() => {
+  const startIndex = (current_page.value - 1) * pagesize.value
+  const endIndex = startIndex + pagesize.value
+  return sortData(tableData.value).slice(startIndex, endIndex)
+})
+
+
 
 
 const handleCurrentChange = (val: number) => {

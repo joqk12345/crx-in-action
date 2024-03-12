@@ -2,6 +2,9 @@
   setup
   lang="ts"
 >
+
+// import '@/content/content.ts'
+
 </script>
 
 <template>
