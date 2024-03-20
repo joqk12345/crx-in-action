@@ -9,6 +9,8 @@ export interface DataInfo<T> {
   refreshToken: string
   /** 用户名 */
   username?: string
+  /**用户id */
+  userid?: number
   /** 当前登陆用户的角色 */
   roles?: Array<string>
 }
@@ -17,11 +19,17 @@ export const sessionKey = 'user-info'
 export const TokenKey = 'authorized-token'
 
 /** 获取`token` */
-export function getToken(): DataInfo<number> {
+export function getToken(): DataInfo<number> | null {
   // 此处与`TokenKey`相同，此写法解决初始化时`Cookies`中不存在`TokenKey`报错
-  return Cookies.get(TokenKey)
+  const tokenData = Cookies.get(TokenKey)
     ? JSON.parse(Cookies.get(TokenKey)!)
     : localStorage.getItem(sessionKey)
+
+  if (tokenData) {
+    return tokenData
+  } else {
+    return null
+  }
 }
 
 /**
@@ -50,20 +58,29 @@ export function setToken(data: DataInfo<Date>) {
       username,
       roles,
     }
-    localStorage.setItem(sessionKey, JSON.stringify(sessionData))
+    // localStorage.setItem(sessionKey, JSON.stringify(sessionData))
+    chrome.storage.local.set({ sessionKey: JSON.stringify(sessionData) })
   }
 
   if (data.username && data.roles) {
     const { username, roles } = data
     setSessionKey(username, roles)
   } else {
-    const storedDataString = localStorage.getItem('sessionKey')
-    if (storedDataString) {
-      const storedData = JSON.parse(storedDataString) // 将字符串转换为对象
-      const username = storedData.name
-      const roles = storedData.roles
-      setSessionKey(username, roles)
-    }
+    chrome.storage.local.get('sessionKey').then((res) => {
+      if (res.sessionKey) {
+        const storedData = JSON.parse(res.sessionKey) // 将字符串转换为对象
+        const username = storedData.name
+        const roles = storedData.roles
+        setSessionKey(username, roles)
+      }
+    })
+    // const storedDataString = localStorage.getItem('sessionKey')
+    // if (storedDataString) {
+    //   const storedData = JSON.parse(storedDataString) // 将字符串转换为对象
+    //   const username = storedData.name
+    //   const roles = storedData.roles
+    //   setSessionKey(username, roles)
+    // }
   }
 }
 

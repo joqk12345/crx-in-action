@@ -49,10 +49,13 @@
   setup
 >
 import { reactive, ref } from 'vue'
+import { ReqConfig, LoginResult, apiReqs } from '@/api/index'
+import { setToken, removeToken } from '@/utils/auth'
+import { useRouter } from 'vue-router'
 import type { FormInstance, FormRules } from 'element-plus'
 
 // router钩子，返回路由器实例
-//const router = useRouter()
+const router = useRouter()
 
 const ruleFormRef = ref<FormInstance>()
 interface RuleForm {
@@ -73,21 +76,15 @@ const rules = reactive<FormRules<RuleForm>>({
     { min: 3, max: 10, message: '长度应该在3-10个字符之间', trigger: 'blur' },
   ],
 })
-const submitForm = async (formEl: FormInstance | undefined) => {
-  console.log("occupation");
-}
-const registerForm = async () => {
-  console.log("register");
-}
-/*
+
 const submitForm = async (formEl: FormInstance | undefined) => {
   if (!formEl) return
   await formEl.validate((valid, fields) => {
     if (valid) {
-      // console.log('submit!')
+      console.log('submit!')
       // console.log(formData)
       //登录校验
-      let config: Config = {
+      let config: ReqConfig = {
         data: {
           username: formData.username,
           password: formData.password
@@ -95,12 +92,13 @@ const submitForm = async (formEl: FormInstance | undefined) => {
         success: (res: LoginResult) => {
           console.log(res)
           if (res?.code === 0) {
-            console.log('res.data', res.data)
+            console.log("登录成功", res.data)
             setToken(res.data)
             // localStorage.setItem('userInfo', JSON.stringify(formData))
             router.push('/home')
+            console.log("跳转到主页面")
           } else {
-            alert(res.msg)
+            console.log(res.msg)
             removeToken()
             router.push('/login')
           }
@@ -122,7 +120,6 @@ const submitForm = async (formEl: FormInstance | undefined) => {
 const registerForm = async () => {
   console.log("register")
 }
-*/
 </script>
 
 

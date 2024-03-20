@@ -1,5 +1,6 @@
 /*global chrome*/
 import { db, Task } from '../db/db.ts'
+import { apiReqs, ReqConfig, ResponseResult } from '@/api/index.ts'
 
 // manifest.json的Permissions配置需添加declarativeContent权限
 chrome.runtime.onInstalled.addListener(function () {
@@ -105,16 +106,49 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
       })
     return true
   } else if (message.action === 'addTask') {
-    console.log('addTask')
-    //add db
-    let task_info: Task = {
-      title: message.title,
-      url: message.url,
-      status: 'pending',
-      download_link: '',
-      date: new Date().toLocaleDateString(),
+    console.log('addTask to db and remote service')
+    // add remote service
+    const taskAddReqBody = {
+      user_id: 'xx',
+      group_id: 'default',
+      priority: 5,
+      name: 'content2audio',
+      type: 'http',
+      source: 'chrome-ext',
+      params: {
+        url: message.url,
+        title: message.title,
+        character_len: '20',
+        text_lang: 'en',
+        tts_config: {},
+      },
     }
-    db.tasks.add(task_info)
+    let addReqConfig: ReqConfig = {
+      data: { taskAddReqBody },
+      success: (res: ResponseResult) => {
+        console.log(res)
+        if (res?.code === 0) {
+          console.log('res.data', res.data)
+          //add db
+          // let task_info: Task = {
+          //   title: message.title,
+          //   url: message.url,
+          //   status: 'pending',
+          //   download_link: '',
+          //   date: new Date().toLocaleDateString(),
+          // }
+          // db.tasks.add(task_info)
+        } else {
+          console.log(res.msg)
+          // removeToken()
+          // router.push('/login')
+        }
+      },
+      fail: (res: ResponseResult) => {
+        console.log('提交任务失败', res)
+      },
+    }
+    apiReqs.submitTask(addReqConfig)
     console.log('add task success ')
   }
 
