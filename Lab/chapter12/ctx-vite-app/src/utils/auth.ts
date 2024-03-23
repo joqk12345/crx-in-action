@@ -50,9 +50,12 @@ export function getToken(): Promise<DataInfo<number>> {
     chrome.storage.local.get(['usersession'], (res) => {
       if (res.usersession) {
         const sessionData = JSON.parse(res.usersession)
+        console.log(sessionData)
         resolve(sessionData)
       } else {
-        reject(new Error("Can't get usersession"))
+        //获取不到值也是返回一个空对象，避免卡入死循环
+        console.log('can not get usersession')
+        resolve({} as DataInfo<number>)
       }
     })
   })

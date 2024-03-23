@@ -1,10 +1,10 @@
-import { getToken, formatToken, refreshToken } from '@/utils/auth'
+// import { getToken, formatToken } from '@/utils/auth'
 
 // dev 调试接口，后端已经开启跨域请求
 let API_DOMAIN: string = 'http://127.0.0.1:8001/'
 // 请求服务器地址（正式build环境真实请求地址）
 if (import.meta.env.MODE === 'production') {
-  //API_DOMAIN = 'https://example.com/'
+  API_DOMAIN = 'https://example.com/'
   API_DOMAIN = 'http://127.0.0.1:8001/'
 }
 
@@ -148,59 +148,72 @@ export function apiRequest(config: ReqConfig) {
     body: data,
   }
 
-  const whiteList = ['/refreshToken', '/extendlogin']
-  const isInWhiteList = whiteList.some((path) => config.url?.includes(path))
-  if (!isInWhiteList) {
-    //注入用户信息
-    getToken()
-      .then((userdata) => {
-        console.log('userdata: ', userdata)
-        if (userdata) {
-          // token存在
-          const now = new Date().getTime()
-          const expired = userdata.expires - now <= 0
-          if (expired) {
-            // token过期
-            // removeToken()
-            console.log('expired token')
+  fetch(config.url!, axiosConfig)
+    .then((res) => res.json())
+    .then((result) => {
+      // 请求结束的回调
+      config.done && config.done()
+      // 请求成功的回调
+      config.success && config.success(result)
+    })
+    .catch((error) => {
+      // 请求结束的回调
+      config.done && config.done()
+      // 请求失败的回调
+      config.fail && config.fail(API_FAILED)
+      console.log('occur excption: ', error)
+    })
 
-            config.data = {
-              refreshToken: userdata.refreshToken,
-            }
-            refreshToken(config)
-              .then((res) => {
-                headers['Authorization'] = formatToken(res.data.accessToken)
-              })
-              .finally(() => {
-                console.log('refresh token')
-              })
-          } else {
-            headers['Authorization'] = formatToken(userdata.accessToken)
-          }
-        }
-      })
-      .then(() => {
-        // 发起请求
-        fetch(config.url!, axiosConfig)
-          .then((res) => res.json())
-          .then((result) => {
-            // 请求结束的回调
-            config.done && config.done()
-            // 请求成功的回调
-            config.success && config.success(result)
-          })
-          .catch((error) => {
-            // 请求结束的回调
-            config.done && config.done()
-            // 请求失败的回调
-            config.fail && config.fail(API_FAILED)
-            console.log('occur excption: ', error)
-          })
-      })
-      .finally(() => {
-        console.log('finally')
-      })
-  }
+  //const whiteList = ['/refreshToken', '/extendlogin']
+  //const isInWhiteList = whiteList.some((path) => config.url?.includes(path))
+  // if (!isInWhiteList) {
+  //   //注入用户信息
+  //   getToken()
+  //     .then((userdata) => {
+  //       console.log('userdata: ', userdata)
+  //       if (userdata) {
+  //         // token存在
+  //         const now = new Date().getTime()
+  //         const expired = userdata.expires - now <= 0
+  //         if (expired) {
+  //           // token过期
+  //           // removeToken()
+  //           console.log('expired token')
+
+  //           config.data = {
+  //             refreshToken: userdata.refreshToken,
+  //           }
+  //           // refreshToken(config)
+  //           //   .then((res) => {
+  //           //     headers['Authorization'] = formatToken(res.data.accessToken)
+  //           //   })
+  //           //   .finally(() => {
+  //           //     console.log('refresh token')
+  //           //   })
+  //         } else {
+  //           headers['Authorization'] = formatToken(userdata.accessToken)
+  //         }
+  //       }
+  //     })
+  //     .then(() => {
+  //       // 发起请求
+  //       fetch(config.url!, axiosConfig)
+  //         .then((res) => res.json())
+  //         .then((result) => {
+  //           // 请求结束的回调
+  //           config.done && config.done()
+  //           // 请求成功的回调
+  //           config.success && config.success(result)
+  //         })
+  //         .catch((error) => {
+  //           // 请求结束的回调
+  //           config.done && config.done()
+  //           // 请求失败的回调
+  //           config.fail && config.fail(API_FAILED)
+  //           console.log('occur excption: ', error)
+  //         })
+  //     })
+  // }
 }
 
 // 委托background执行请求

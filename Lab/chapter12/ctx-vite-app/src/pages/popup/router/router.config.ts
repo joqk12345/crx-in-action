@@ -17,7 +17,7 @@ router.beforeEach((to, from, next) => {
     .then((sessionData: DataInfo<number>) => {
       // 处理成功获取到的 sessionData 数据
       console.log(sessionData)
-      if (!sessionData) {
+      if (!sessionData.username) {
         if (to.path === '/login') {
           next()
           return
@@ -29,7 +29,7 @@ router.beforeEach((to, from, next) => {
     })
     .catch((error: Error) => {
       // 处理获取数据失败的情况
-      console.error('Error:', error.message)
+      // console.error('Error:', error.message)
       next('/login')
     })
 })
